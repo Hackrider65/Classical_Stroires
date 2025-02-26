@@ -1,0 +1,75 @@
+/* portfolio-detail.css */
+
+/* Portfolio Detail Content Section */
+.portfolio-detail-content {
+    padding: 60px 0; /* Add padding around the section */
+}
+
+.portfolio-detail-content .container {
+    display: flex; /* Use flexbox to arrange image and text side-by-side */
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 30px; /* Spacing between image and text */
+}
+
+.portfolio-detail-image {
+    flex: 1.5; /* Image takes up more space */
+}
+
+.portfolio-detail-image img {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border-radius: 8px; /* Optional: Rounded corners for image */
+}
+
+.portfolio-detail-text {
+    flex: 1; /* Text takes up remaining space */
+}
+
+.portfolio-detail-text h2 {
+    font-size: 2.5em; /* Larger title for detail page */
+    margin-bottom: 10px;
+    color: #333; /* Darker color for title */
+    font-family: 'Cormorant Garamond', serif; /* Use your serif font */
+}
+
+.portfolio-detail-text .category {
+    font-style: italic; /* Italicize category */
+    color: #777; /* Lighter color for category */
+    margin-bottom: 20px;
+}
+
+.portfolio-detail-text p {
+    line-height: 1.7; /* Comfortable line height for reading */
+    margin-bottom: 15px;
+    color: #555; /* Slightly darker text color */
+}
+
+.portfolio-detail-text .btn-primary {
+    display: inline-block; /* Make button inline-block */
+    padding: 12px 30px; /* Adjust padding for button */
+    background-color: #f0f0f0; /* Light background color for button */
+    color: #333; /* Dark text color for button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for button */
+    font-weight: 500; /* Slightly bolder font weight */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.portfolio-detail-text .btn-primary:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+
+/* Responsive adjustments (example - adjust as needed based on your style.css) */
+@media (max-width: 768px) {
+    .portfolio-detail-content .container {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+    .portfolio-detail-image {
+        margin-bottom: 20px; /* Add margin below image when stacked */
+    }
+    .portfolio-detail-text h2 {
+        font-size: 2em; /* Adjust title size for smaller screens */
+    }
+}
